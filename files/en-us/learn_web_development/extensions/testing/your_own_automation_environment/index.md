@@ -428,7 +428,11 @@ const { Builder, Browser, By, Key } = require("selenium-webdriver");
 })();
 ```
 
+<<<<<<< HEAD:files/en-us/learn_web_development/extensions/testing/your_own_automation_environment/index.md
 Try running the updated code. WebDriver will now fill out the first form field, wait for one second, then test whether its value got filled out (i.e., is not empty) by using `getAttribute()` to retrieve its `value` attribute value. It then prints a message to the console to report success/failure.
+=======
+WebDriver will now wait for 2 seconds before filling in the form field. We then test whether its value got filled in (i.e. is not empty) by using `getAttribute()` to retrieve its `value` attribute value, and print a message to the console if it is not empty.
+>>>>>>> fix-its:files/en-us/learn/tools_and_testing/cross_browser_testing/your_own_automation_environment/index.md
 
 > [!NOTE]
 > There is also a method called [`wait()`](https://www.selenium.dev/selenium/docs/api/javascript/WebDriver.html#wait), which repeatedly tests a condition for a certain length of time, and then carries on executing the code. This also makes use of the [util library](https://www.selenium.dev/selenium/docs/api/javascript/lib_until.js.html), which defines common conditions to use along with `wait()`.
